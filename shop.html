@@ -4,11 +4,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Creative jquery</title>
-<!-- jQuery読み込み -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/111.3/jquery.min.js"></script>
+<!-- CSS -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
+<!-- favicon -->
 <link rel="shortcut icon" href="img/favicon.ico.png">
+<!-- jQuery読み込み -->
+<script src="js/vendor/modernizr.custom.min.js"></script>
+<script src="js/vendor/jquery-3.5.0.min.js"></script>
+<script src="js/main.js"></script>
 </head>
 
 <body>
@@ -16,9 +20,9 @@
 		<div class="container">
 			<div class="header-title-area">
 				<a href="index.html"><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
-				<a href="index.html"><img src="img/Pixel Art.jpg" width="50" height="50" alt="N-Scriptロゴ" /></a>
+                <a href="index.html"><img src="img/Pixel Art.jpg" width="50" height="50" alt="N-Scriptロゴ" /></a>
 				<a href="index.html"><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
-
+                <h1>Creative jquery</h1>
 	</div>
 		<ul class="header-navigation">
 			<li class="nav_left"><a href="index.html">Home</a></li>
@@ -31,15 +35,35 @@
 	</div>
 	</header>
 				<div class="container">
-					<h1>IMAGENATION</h1>
-					<input id="binid1" type="button" value="Button 1">
-					<input id="binid2" type="button" value="Button 2">
+					<h2>IMAGENATION</h2>
 				</div>
 				<div class="section">
-					<h2>SHOP</h2>
+					<h3>SHOP</h3>
 						<fieldset>
 							<p class="shop_img"><img src="img/abstract-business-code-270348.jpg" width="950" height="550" alt="image" /></p>
-						</fieldset>
+                        </fieldset>
+<div class="sticky_navi_box" style="top:0px;">
+    <div class="sticky_navi_frame">
+        <div class="sticky_navi_select_inner">
+            <div class="sticky_navi_title"></div>
+            <div class="sticky_selbox">
+                <select>
+                </select>
+            </div>
+        </div>
+        <div class="sticky_navi_inner">
+            <div class="sticky_navi_title">Bisiness website</div>
+            <nav class="sticky_navi_scroll">
+                <ul class="sticky_navi_list" data-auto="1">
+                    <li><a class="sticky_navi_item" href="#01">About us</a></li>
+                    <li><a class="sticky_navi_item" href="#02">売り</a></li>
+                    <li><a class="sticky_navi_item" href="#03">Sticky</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div><!-- .sticky_navi_box END-->
+
 						<form method="post" action="http://wtk.me/mcd13/shop.php">
 						<fieldset>
 							<legend> ご注文の商品</legend>
@@ -52,8 +76,8 @@
 									<select id="room_name" name="room_name">
 										<option selected>商品を選んでください</option>
 										<option>Computer-Sience_foodparka</option>
-										<option>N-Script_eco-bag </option>
-										<option>N-Script_T-shats</option>
+										<option>E-dog_eco-bag </option>
+										<option>E-dog_T-shats</option>
 									</select>
 								</div>
 								<label>
@@ -79,7 +103,7 @@
 			</div>
 			<div class="footer">
 				<p>Copyright &copy;2020 旭町スタジオ All righreserved</p>
-				<img src="img/foddaer_34.png" width="230height="45" alt="logo" />
+				<img src="./img/foddaer_34.png" width="230height="45" alt="logo" />
 			</div>
 		</div>
 	</div>
