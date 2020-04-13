@@ -5,11 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Creative jquery</title>
 <!-- CSS -->
-
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
-
+</head>
+<!-- favicon -->
 <link rel="shortcut icon" href="img/favicon.ico.png">
+<!-- javascript -->
 <script src="js/vendor/modernizr.custom.min.js"></script>
 <script src="js/vendor/jquery-3.5.0.min.js"></script>
 <script src="js/main.js"></script>
@@ -21,6 +22,7 @@
         <a href="index.html"><img src="img/CHECK IT .png"width="50" height="50" alt="山ロゴ" /></a>
         <a href="index.html"><img src="img/Pixel Art.jpg"width="50" height="50" alt="DNAロゴ" /></a>
         <a href="index.html"><img src="img/CHECK IT .png"width="50" height="50" alt="山ロゴ" /></a>
+        <h1>Creative jquery</h1>
     </div>
         <ul class="header-navigation">
         <li><a href="index.html">HOME</a></li>
@@ -31,12 +33,48 @@
         <li><a href="event.html">EVENT</a></li>
         </ul>
     </div>
+
+    <div class="slideshow">
+        <div class="slideshow-slides">
+            <a href="./" class="slide" id="slide-1"><img src="./img/slide-1.jpg" alt="" width="1600" height="465"></a>
+            <a href="./" class="slide" id="slide-2"><img src="./img/slide-2.jpg" alt="" width="1600" height="465"></a>
+            <a href="./" class="slide" id="slide-3"><img src="./img/slide-3.jpg" alt="" width="1600" height="465"></a>
+            <a href="./" class="slide" id="slide-4"><img src="./img/slide-4.jpg" alt="" width="1600" height="465"></a>
+        </div>
+        <div class="slideshow-nav">
+            <a href="#" class="prev">Prev</a>
+            <a href="#" class="next">Next</a>
+        </div>
+        <div class="slideshow-indicator"></div>
+    </div>
             <div class="slideshow">
-                <img src="./img/shutterstock_329205053のコピーjpg" alt="" width="1600" height="465">
-                <img src="img/simon-maage-tXiMrX3Gc-g-unsplash.jpg"alt="" width="1600" height="465">
-                <img src="img/write-593333_640.jpg" alt=""width="1600" height="465">
-                <img src="img/laptop-2589420_1920.jpg" alt=""width="1600" height="465">
+                <img src="img/slide-4.jpg" alt="" width="1600" height="465">
+                <img src="img/slide-1.jpg"alt="" width="1600" height="465">
+                <img src="img/slide-4.jpg" alt=""width="1600" height="465">
+                <img src="img/slide-1.jpg" alt=""width="1600" height="465">
             </div>
+
+<div class="sticky_navi_box" style="top:0px;">
+    <div class="sticky_navi_frame">
+        <div class="sticky_navi_select_inner">
+            <div class="sticky_navi_title"></div>
+            <div class="sticky_selbox">
+                <select>
+                </select>
+            </div>
+        </div>
+        <div class="sticky_navi_inner">
+            <div class="sticky_navi_title">Bisiness website</div>
+            <nav class="sticky_navi_scroll">
+                <ul class="sticky_navi_list" data-auto="1">
+                    <li><a class="sticky_navi_item" href="#01">stickey us</a></li>
+                    <li><a class="sticky_navi_item" href="#02">sticky</a></li>
+                    <li><a class="sticky_navi_item" href="#03">sticky</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div><!-- .sticky_navi_box END-->
 
         <div class="section">
             <h1 id="heading1">Welcome to My Website</h1>
