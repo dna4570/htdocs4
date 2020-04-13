@@ -3,27 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>My portfolio</title>
-
-<!-- jQuery読み込み -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<title>Creative jquery</title>
+<!-- CSS -->
 <link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- favicon -->
 <link rel="shortcut icon" href="img/favicon.ico.png">
+<!-- javascript -->
 <script src="js/vendor/modernizr.custom.min.js"></script>
-<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="js/vendor/jquery-3.5.0.min.js"></script>
 <script src="js/main.js"></script>
 </head>
-<body>
 
-<header>
-	<div class="container">
-        <div class="header-title-area"></div>
+<body>
+<div class="container">
+    <div class="header-title-area"></div>
 		<a href="index.html"><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
 		<a href="index.html"><img src="img/Pixel Art.jpg" width="50" height="50" alt="DNAロゴ" /></a>
-		<a href="index.html"><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
-
+        <a href="index.html"><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
+        <h1>Creative jquery</h1>
+    </div>
+    <div class="navigation"></div>
         <ul class="header-navigation">
             <li class="nav_left"><a href="index.html">HOME</a></li>
             <li class="nav_center"><a href="bio.html">BIO</a></li>
@@ -33,25 +33,43 @@
             <li class="nav_right"><a href="event.html">EVENT</a></li>
         </ul>
     </div>
-	</header>
+</div>
 <div class="container">
-<header class="hero-header">
-    <div class="inner">
-        <div class="slideshow">
-            <img src="./img/slide-1.jpg" alt="" width="1600" height="465">
-            <img src="./img/slide-2.jpg" alt="" width="1600" height="465">
-            <img src="./img/slide-3.jpg" alt="" width="1600" height="465">
-            <img src="./img/slide-4.jpg" alt="" width="1600" height="465">
-        </div>
+    <div class="slideshow">
+        <img src="./img/slide-1.jpg" alt="" width="1600" height="465">
+        <img src="./img/slide-4.jpg" alt="" width="1600" height="465">
+        <img src="./img/slide-1.jpg" alt="" width="1600" height="465">
+        <img src="./img/slide-4.jpg" alt="" width="1600" height="465">
     </div>
-</header>
-
 	<h1 class="heading1">Welcome to My Website</h1>
         <div class="flex">
-			<img src="img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
-			<img src="img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
-            <img src="img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
+			<img src="./img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
+			<img src="./img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
+            <img src="./img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
         </div>
+
+<div class="sticky_navi_box" style="top:0px;">
+    <div class="sticky_navi_frame">
+        <div class="sticky_navi_select_inner">
+            <div class="sticky_navi_title"></div>
+            <div class="sticky_selbox">
+                <select>
+                </select>
+            </div>
+        </div>
+        <div class="sticky_navi_inner">
+            <div class="sticky_navi_title">Bisiness website</div>
+            <nav class="sticky_navi_scroll">
+                <ul class="sticky_navi_list" data-auto="1">
+                    <li><a class="sticky_navi_item" href="#01">About us</a></li>
+                    <li><a class="sticky_navi_item" href="#02">売り</a></li>
+                    <li><a class="sticky_navi_item" href="#03">stickey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div><!-- .sticky_navi_box END-->
+
 		<div class="section">
 			<h1 id="heading1">Welcome to My Website</h1>
             <h1 class="heading1">This web site is coming along nicely</h1>
@@ -75,6 +93,5 @@
 	<img src="img/foddaer_34.png" width="230" height="45" alt="logo">
 </div><!-- Endfooter -->
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npmslick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
