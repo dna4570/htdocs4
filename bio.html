@@ -34,6 +34,15 @@
         </ul>
     </div>
 
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo">
+                <div class="logo-title">NAONORI YOKOYAMA</div>
+                <div class="logo-desc">PORTFOLIO</div>
+            </h1>
+        </div>
+    </header>
+
     <div class="slideshow">
         <div class="slideshow-slides">
             <a href="./" class="slide" id="slide-1"><img src="./img/slide-1.jpg" alt="" width="1600" height="465"></a>
@@ -59,12 +68,10 @@
         <div class="sticky_navi_select_inner">
             <div class="sticky_navi_title"></div>
             <div class="sticky_selbox">
-                <select>
-                </select>
             </div>
         </div>
         <div class="sticky_navi_inner">
-            <div class="sticky_navi_title">Bisiness website</div>
+            <div class="sticky_navi_title"></div>
             <nav class="sticky_navi_scroll">
                 <ul class="sticky_navi_list" data-auto="1">
                     <li><a class="sticky_navi_item" href="#01">stickey us</a></li>
@@ -89,9 +96,36 @@
                 <option value="Option2">Option 2</option>
                 <option value="Option3">Option 3</option>
             </select>
-            <p>Here is a Link to<a target="_blank"href="http://www.google.com">Google.com</a> that you can on the web!</p>
-            <p>You can <a href="mailto:dog@examle.com">send me an email</a> by clicking the previous Link!</p>
-        </div>
+            <section class="contact-section" id="contact">
+                <div class="inner">
+                    <div class="contact-form-wrapper">
+                        <h2>Contact</h2>
+                        <div class="contact-form">
+                            <form action="./">
+                                <div class="form-item">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="form-item">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="form-item">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                                <div class="form-item">
+                                    <input type="submit" name="submit" id="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact-map" id="map-container">
+                        <img src="//maps.googleapis.com/maps/api/staticmap?markers=35.6802361,139.70130849999998&amp;size=480x500&amp;sensor=false"
+                            alt="" class="static-map">
+                    </div>
+                </div>
+            </section>
             <div class="footer">
             <p>Copyright(C)旭町スタジオ All right Reserved</p>
             <img src="img/foddaer_34.png" width="230" height="45" alt="logo" />

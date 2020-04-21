@@ -7,8 +7,12 @@
 <!-- CSS -->
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 <!-- favicon -->
 <link rel="shortcut icon" href="img/favicon.ico.png">
+
+<script src="https://kit.fontawesome.com/9b05599f08.js" crossorigin="anonymous"></script>
 <!-- javascript -->
 <script src="js/vendor/modernizr.custom.min.js"></script>
 <script src="js/vendor/jquery-3.5.0.min.js"></script>
@@ -23,7 +27,7 @@
         <a href="index.html"><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ" /></a>
         <h1>Creative jquery</h1>
     </div>
-    <div class="navigation"></div>
+    <div class="navigation">
         <ul class="header-navigation">
             <li class="nav_left"><a href="index.html">HOME</a></li>
             <li class="nav_center"><a href="bio.html">BIO</a></li>
@@ -34,14 +38,60 @@
         </ul>
     </div>
 </div>
+
 <div class="container">
-    <div class="slideshow">
-        <img src="./img/slide-1.jpg" alt="" width="1600" height="465">
-        <img src="./img/slide-4.jpg" alt="" width="1600" height="465">
-        <img src="./img/slide-1.jpg" alt="" width="1600" height="465">
-        <img src="./img/slide-4.jpg" alt="" width="1600" height="465">
-    </div>
-	<h1 class="heading1">Welcome to My Website</h1>
+    <ul class="slider">
+        <img src="img/slide-1.jpg" alt="" width="1600" height="465">
+        <img src="img/slide-4.jpg" alt="" width="1600" height="465">
+        <img src="img/slide-1.jpg" alt="" width="1600" height="465">
+        <img src="img/slide-4.jpg" alt="" width="1600" height="465">
+    </ul>
+    <h1 class="heading1">Welcome to My Website</h1>
+
+    <div class="section-topics">
+        <h1 class="heading1">Welcome</h1>
+        <section class="topics-section" id="topics">
+            <div class="inner">
+                <ul class="topics-list clearfix">
+                    <li>
+                        <a href="./">
+                            <span class="image-wrapper">
+                                <img class="image" src="./img/apple-black-coffee-business-461064.jpg" alt="" height="230"
+                                    width="304">
+                            </span>
+                            <b class="title">Hot Topic 01</b>
+                            <time class="date" datetime="2013-05-16">2013/05/16</time>
+                            <p class="description">
+                                私は近頃いやしくもこういう創作家というののためで来でた。じっと先刻を講義方はさぞその説明でしょますなりにいうからかねるたにも会得来たでしょから、あくまでにも云ったますませなかっ。他へあっです事もできるだけ毎日におもにうんた。
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            <span class="image-wrapper">
+                                <img class="image" src="./img/apple-black-coffee-business-461064.jpg" alt="" height="230"
+                                    width="304">
+                            </span>
+                            <b class="title">Hot Topic 02</b>
+                            <time class="date" datetime="2013-05-01">2013/05/01</time>
+                            <p class="description">秋刀魚をも幸福たいよいよもっで始めれた十一月を便所にすると、家をもったり、だから先輩が聴いやする世間でする個性、好い加減うて</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            <span class="image-wrapper">
+                                <img class="image" src="./img/apple-black-coffee-business-461064.jpg" alt="" height="230"
+                                    width="304">
+                            </span>
+                            <b class="title">Hot Topic 03</b>
+                            <time class="date" datetime="2013-04-01">2013/04/01</time>
+                            <p class="description">何にさからは附随のまぐれ当りは申すば来たようにするられのあり。手は不行届に自覚たところたですはずうない。私のようりのなり</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section><!-- /.section-topics -->
+
         <div class="flex">
 			<img src="./img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
 			<img src="./img/apple-black-coffee-business-461064.jpg" width="320" height="230" alt="pc">
@@ -53,12 +103,10 @@
         <div class="sticky_navi_select_inner">
             <div class="sticky_navi_title"></div>
             <div class="sticky_selbox">
-                <select>
-                </select>
             </div>
         </div>
         <div class="sticky_navi_inner">
-            <div class="sticky_navi_title">Bisiness website</div>
+            <div class="sticky_navi_title"></div>
             <nav class="sticky_navi_scroll">
                 <ul class="sticky_navi_list" data-auto="1">
                     <li><a class="sticky_navi_item" href="#01">About us</a></li>
@@ -70,28 +118,85 @@
     </div>
 </div><!-- .sticky_navi_box END-->
 
-		<div class="section">
-			<h1 id="heading1">Welcome to My Website</h1>
-            <h1 class="heading1">This web site is coming along nicely</h1>
-            <p class="heading">Let's Make somet<strong>amazing</strong> with the<em>welcome></p>
-            <p>we are going to have a lot of fun in these vidose learning how to code</p>
-            <select name="form_example">
-                <option value="Option1">Option 1</option>
-                <option value="Option2">Option 2</option>
-                <option value="Option3">Option 3</option>
-            </select>
-            <p>Here's a basic orderd List</p>
-            <p>Here is a Link to
-            <a target="_blank" href="http://www.google.com">Google.com</a> that you can on the web!</p>
-            <p>You can <a href="mailto:dog@examle.com">send me an email</a> by clicking the previous Link!</p>
-            <a href="#" class="btn">&gt;もっと見る</a>
-		</div>
-</div>
+        <div class="section" id="about">
+            <div class="inner">
+                <div class="section-title-area">
+                    <h2 class="section-title">ABOUT</h2>
+                    <div class="section-intro">
+                        こんにちは！
+                    </div>
+                </div>
+                <div class="section-body">
+                    <div class="section-image">
+                        <img class="fadein ls-is-cached lazyloaded" data-src="img/about/profile.jpg" alt=""
+                            src="img/about/profile.jpg">
+                    </div>
+                    <div class="section-desc">
+                        <div class="section-text">
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br><br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="footer">
-	<p>Copyright(C)旭町スタジオ All right Reserved</p>
-	<img src="img/foddaer_34.png" width="230" height="45" alt="logo">
+            <section class="contact-section" id="contact">
+                <div class="inner">
+                    <div class="contact-form-wrapper">
+                        <h2>Contact</h2>
+                        <div class="contact-form">
+                            <form action="./">
+                                <div class="form-item">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="form-item">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="form-item">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                                <div class="form-item">
+                                    <input type="submit" name="submit" id="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact-map" id="map-container">
+                        <img src="//maps.googleapis.com/maps/api/staticmap?markers=35.6802361,139.70130849999998&amp;size=480x500&amp;sensor=false"
+                            alt="" class="static-map">
+                    </div>
+                </div>
+            </section>
+
+<div class="footer" role="contentinfo">
+	<p>Copyright(©)旭町スタジオ All right Reserved</p>
+    <img src="img/foddaer_34.png" width="230" height="45" alt="logo">
+
+        <div class="inner clearfix">
+            <aside class="social-links">
+                <ul>
+                    <li class="item-facebook">
+                        <i class="far fa-user"></i>
+                        <a href="http://www.facebook.com/SHIFTBRAIN" target="_blank">
+                            <span class="label">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="item-twitter">
+                        <i class="far fa-thumbs-up"></i>
+                        <a href="https://twitter.com/shiftbrain" target="_blank">
+                            <span class="label">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
 </div><!-- Endfooter -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="index.js" charset="utf-8"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
