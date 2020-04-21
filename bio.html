@@ -1,135 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Creative jquery</title>
-<!-- CSS -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
-</head>
-<!-- favicon -->
-<link rel="shortcut icon" href="img/favicon.ico.png">
-<!-- javascript -->
-<script src="js/vendor/modernizr.custom.min.js"></script>
-<script src="js/vendor/jquery-3.5.0.min.js"></script>
-<script src="js/main.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Creative jquery</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico.png" />
+    <!-- javascript -->
+    <script src="js/vendor/modernizr.custom.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="header-title-area">
-        <a href="index.html"><img src="img/CHECK IT .png"width="50" height="50" alt="山ロゴ" /></a>
-        <a href="index.html"><img src="img/Pixel Art.jpg"width="50" height="50" alt="DNAロゴ" /></a>
-        <a href="index.html"><img src="img/CHECK IT .png"width="50" height="50" alt="山ロゴ" /></a>
+      <div class="header-title-area">
+        <a href="index.html"
+          ><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ"
+        /></a>
+        <a href="index.html"
+          ><img src="img/Pixel Art.jpg" width="50" height="50" alt="DNAロゴ"
+        /></a>
+        <a href="index.html"
+          ><img src="img/CHECK IT .png" width="50" height="50" alt="山ロゴ"
+        /></a>
         <h1>Creative jquery</h1>
-    </div>
-        <ul class="header-navigation">
+      </div>
+      <ul class="header-navigation">
         <li><a href="index.html">HOME</a></li>
         <li><a href="bio.html">BIO</a></li>
         <li><a href="video.html">VIDEO</a></li>
         <li><a href="music.html">MUSIC</a></li>
         <li><a href="shop.html">SHOP</a></li>
         <li><a href="event.html">EVENT</a></li>
-        </ul>
+      </ul>
     </div>
 
-    <header id="header">
+    <div class="slider">
+      <img src="img/slide-4.jpg" alt="" width="1600" height="465" />
+      <img src="img/slide-1.jpg" alt="" width="1600" height="465" />
+      <img src="img/slide-4.jpg" alt="" width="1600" height="465" />
+      <img src="img/slide-1.jpg" alt="" width="1600" height="465" />
+    </div>
+
+    <!-- .sticky_navi_box END-->
+
+    <div class="section">
+      <h1 id="heading1">Welcome to My Website</h1>
+      <h1 class="heading1">
+        This web site is coming along nicely
+      </h1>
+      <p class="heading">
+        Let's Make something <strong>amazing</strong> with the <em>web!</em>
+      </p>
+      <p>
+        we are going to have a lot of fun in these vidose learning how to code
+      </p>
+      <select name="form_example">
+        <option value="Option1">Option 1</option>
+        <option value="Option2">Option 2</option>
+        <option value="Option3">Option 3</option>
+      </select>
+      <section class="contact-section" id="contact">
         <div class="inner">
-            <h1 class="logo">
-                <div class="logo-title">NAONORI YOKOYAMA</div>
-                <div class="logo-desc">PORTFOLIO</div>
-            </h1>
-        </div>
-    </header>
-
-    <div class="slideshow">
-        <div class="slideshow-slides">
-            <a href="./" class="slide" id="slide-1"><img src="./img/slide-1.jpg" alt="" width="1600" height="465"></a>
-            <a href="./" class="slide" id="slide-2"><img src="./img/slide-2.jpg" alt="" width="1600" height="465"></a>
-            <a href="./" class="slide" id="slide-3"><img src="./img/slide-3.jpg" alt="" width="1600" height="465"></a>
-            <a href="./" class="slide" id="slide-4"><img src="./img/slide-4.jpg" alt="" width="1600" height="465"></a>
-        </div>
-        <div class="slideshow-nav">
-            <a href="#" class="prev">Prev</a>
-            <a href="#" class="next">Next</a>
-        </div>
-        <div class="slideshow-indicator"></div>
-    </div>
-            <div class="slideshow">
-                <img src="img/slide-4.jpg" alt="" width="1600" height="465">
-                <img src="img/slide-1.jpg"alt="" width="1600" height="465">
-                <img src="img/slide-4.jpg" alt=""width="1600" height="465">
-                <img src="img/slide-1.jpg" alt=""width="1600" height="465">
-            </div>
-
-<div class="sticky_navi_box" style="top:0px;">
-    <div class="sticky_navi_frame">
-        <div class="sticky_navi_select_inner">
-            <div class="sticky_navi_title"></div>
-            <div class="sticky_selbox">
-            </div>
-        </div>
-        <div class="sticky_navi_inner">
-            <div class="sticky_navi_title"></div>
-            <nav class="sticky_navi_scroll">
-                <ul class="sticky_navi_list" data-auto="1">
-                    <li><a class="sticky_navi_item" href="#01">stickey us</a></li>
-                    <li><a class="sticky_navi_item" href="#02">sticky</a></li>
-                    <li><a class="sticky_navi_item" href="#03">sticky</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div><!-- .sticky_navi_box END-->
-
-        <div class="section">
-            <h1 id="heading1">Welcome to My Website</h1>
-            <h1 class="heading1">
-                This web site is coming along nicely
-            </h1>
-            <p class="heading">Let's Make something <strong>amazing</strong> with the
-            <em>web!</em></p>
-            <p>we are going to have a lot of fun in these vidose learning how to code</p>
-            <select name="form_example">
-                <option value="Option1">Option 1</option>
-                <option value="Option2">Option 2</option>
-                <option value="Option3">Option 3</option>
-            </select>
-            <section class="contact-section" id="contact">
-                <div class="inner">
-                    <div class="contact-form-wrapper">
-                        <h2>Contact</h2>
-                        <div class="contact-form">
-                            <form action="./">
-                                <div class="form-item">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name">
-                                </div>
-                                <div class="form-item">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                                <div class="form-item">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message"></textarea>
-                                </div>
-                                <div class="form-item">
-                                    <input type="submit" name="submit" id="submit" value="Submit">
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="contact-map" id="map-container">
-                        <img src="//maps.googleapis.com/maps/api/staticmap?markers=35.6802361,139.70130849999998&amp;size=480x500&amp;sensor=false"
-                            alt="" class="static-map">
-                    </div>
+          <div class="contact-form-wrapper">
+            <h2>Contact</h2>
+            <div class="contact-form">
+              <form action="./">
+                <div class="form-item">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" />
                 </div>
-            </section>
-            <div class="footer">
-            <p>Copyright(C)旭町スタジオ All right Reserved</p>
-            <img src="img/foddaer_34.png" width="230" height="45" alt="logo" />
+                <div class="form-item">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="form-item">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-item">
+                  <input
+                    type="submit"
+                    name="submit"
+                    id="submit"
+                    value="Submit"
+                  />
+                </div>
+              </form>
             </div>
+          </div>
         </div>
-    </body>
+      </section>
+      <div class="footer">
+        <p>Copyright(C)旭町スタジオ All right Reserved</p>
+        <img src="img/foddaer_34.png" width="230" height="45" alt="logo" />
+      </div>
+    </div>
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.5.0.min.js"></script>
+  </body>
 </html>
