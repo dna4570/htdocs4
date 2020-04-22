@@ -1,14 +1,10 @@
 $('.slider').slick(
-    dots: true;
+    dots, true
 });
 
-$('.single-item').slick(
-    dots: true;
-);
-
 $(document).ready(function () {
-    $('.your-class').slick({
-        setting- name: setting - value
+    $('.slider').slick({
+        setting-name, setting-value
     });
 });
 
@@ -17,8 +13,6 @@ $(function () {
         var $window =$(window),
             $header = $(this),
         headerOffsetTop = $header.offset().top;
-
-
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -30,39 +24,40 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+$(function myFunction() {
     if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
     } else {
     navbar.classList.remove("sticky");
     }
 }
+$(document).ready(function(){
+    $("#theTarget").skippr();
+});
 
-var slideIndex = 1;
-showSlides(slideIndex);
+$(function(){
+    // #で始まるa要素をクリックした場合に処理
+    $('a[href^=#]').click(function(){
+      // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
+      var adjust = 0;
+      // スクロールの速度（ミリ秒）
+      var speed = 400;
+      // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
+      var href= $(this).attr("href");
+      // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
+      var position = target.offset().top + adjust;
+      // スムーススクロール linear（等速） or swing（変速）
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+});
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-}
+$('.center').slick({
+    infinite: true, //スライドのループ有効化
+    dots:true, //ドットのナビゲーションを表示
+    centerMode: true, //要素を中央寄せ
+    centerPadding:'10%', //両サイドの見えている部分のサイズ
+    autoplay:true, //自動再生
+});
