@@ -1,4 +1,7 @@
 {
     "editor.fontSize": 20,
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,\"Source Han Code JP\""
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,\"Source Han Code JP\"",
+    "files.associations": {
+    
+    }
 }
