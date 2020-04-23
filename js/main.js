@@ -1,12 +1,12 @@
 $(document).ready(function () {
 	$('.slider').slick(
-	    dots, true
+		dots, true
 	});
 });
 
 $(function () {
-  $('.page-header').each(function () {
-      var $window =$(window),
+    $('.page-header').each(function () {
+			var $window =$(window),
           $header = $(this),
       headerOffsetTop = $header.offset().top;
 
@@ -38,19 +38,27 @@ $('.center').slick({
 
 $(function() {
 
- var $window = $(window),
-     $header = $('.page-header'),
-     headerOffsetTop = $header.offset().top;
+var $window = $(window),
+	$header = $('.page-header'),
+	headerOffsetTop = $header.offset().top;
 
 
- $window.on('scroll', function() {
-   if ($window.scrollTop() > headerOffsetTop) {
-     $header.addClass('sticky');
-   } else {
-     $header.removeClass('sticky');
-   }
- });
+$window.on('scroll', function() {
+  if ($window.scrollTop() > headerOffsetTop) {
+    $header.addClass('sticky');
+  } else {
+    $header.removeClass('sticky');
+  }
+});
 
- $window.trigger('scroll');
+$window.trigger('scroll');
 
 });
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('center').slick({
+        accessibility: true
+    });
+});
+</script>

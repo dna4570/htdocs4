@@ -3,5 +3,6 @@
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace,\"Source Han Code JP\"",
     "files.associations": {
     
-    }
+    },
+    "editor.minimap.enabled": false
 }
