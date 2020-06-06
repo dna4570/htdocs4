@@ -6,9 +6,9 @@ $(document).ready(function () {
 
 $(function () {
     $('.page-header').each(function () {
-			var $window =$(window),
-          $header = $(this),
-      headerOffsetTop = $header.offset().top;
+		var $window =$(window),
+        $header = $(this),
+        headerOffsetTop = $header.offset().top;
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -44,11 +44,11 @@ var $window = $(window),
 
 
 $window.on('scroll', function() {
-  if ($window.scrollTop() > headerOffsetTop) {
+    if ($window.scrollTop() > headerOffsetTop) {
     $header.addClass('sticky');
-  } else {
+    } else {
     $header.removeClass('sticky');
-  }
+    }
 });
 
 $window.trigger('scroll');
@@ -62,3 +62,45 @@ $(document).ready(function(){
     });
 });
 </script>
+
+$(function(){
+    //スクロールの方向　−1の時には左、1の時には右
+    var dir = -1;
+
+    //スクロールのインターバル（何秒ごとにスクロールさせるか。3000ミリ秒に設定）
+    var interval = 3000;
+
+    //スクロールのスピード(700ミリ秒に設定)
+    var duration = 700;
+
+    // タイマー用の変数
+    var timer;
+});
+
+        $(function () {
+            //スクロールの方向　−1の時には左、1の時には右
+            var dir = -1;
+
+            //スクロールのインターバル（何秒ごとにスクロールさせるか。3000ミリ秒に設定）
+            var interval = 3000;
+
+            //スクロールのスピード(700ミリ秒に設定)
+            var duration = 700;
+
+            // タイマー用の変数
+            var timer;
+        });
+
+        $(function () {
+            //スクロールの方向　−1の時には左、1の時には右
+            var dir = -1;
+
+            //スクロールのインターバル（何秒ごとにスクロールさせるか。3000ミリ秒に設定）
+            var interval = 3000;
+
+            //スクロールのスピード(700ミリ秒に設定)
+            var duration = 700;
+
+            // タイマー用の変数
+            var timer;
+        });
