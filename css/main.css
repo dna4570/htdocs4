@@ -1,492 +1,417 @@
 @charset "UTF-8";
-/*共通部分*/
-body {
-    width: 1200px;
-    margin: 0 auto 40px auto;
-    display: block;
-    margin: auto;
-    font-family: "Open Sans", sans-serif;
-    font-family: verdana;
-    background-color: lightgray;
-}
-h1, h2, h3, h4, h5 {
-    margin: 0 0 10px 0;
-    padding: 0;
-}
-/* Base */
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
 html {
-    font-family: "Ropa Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 62.5%;
 }
-a {
-    color: inherit;
-    text-decoration: none;
+body {
+  background: #151515 url('../img/abstract-business-code-270348.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: Raleway, "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
 }
-header {
-    background-color: gray;
-    height: 54px;
-    width: 1200px;
-    font-size: 80%;
-    vertical-align: top;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-.section-topics{
-    text-align: center;
+
+
+/* --------------------------------
+ * parts
+ * -------------------------------- */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
 }
-.topics-section{
-    display: flex;
-    text-align: center;
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
 }
-.inner{
-    display: flex;
-    text-align: center;
+.heading::before {
+  bottom: 5px;
 }
-.topics-list clearfix{
-    display: flex;
-    text-align: center;
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.button-showy {
+  background-color: #D29E04;
+}
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* --------------------------------
+ * header
+ * -------------------------------- */
+.header {
+  padding: 170px 30px 80px;
+}
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+}
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.6rem;
+}
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+.buttons .button {
+  margin: 10px;
+}
+
+
+/* --------------------------------
+ * about
+ * -------------------------------- */
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
 }
 .about-text {
-    margin: 30px 0;
-    line-height:2.5;
-}
-.heading {
-    position: relative;
-    margin:30px 0 15px;
-    lerrer-sapacing: 2px;
-    font-size: 4rem;
-}
-.heading::before, .heading::after {
-    content; '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid #999;
-}
-.box {
-    width: 300px;
-    height: 54px;
-    background-color: green;
-    float: right;
-    display: block;
-    margin: auto;
-}
-.main-nav {
-    background-color: black;
-    float: left;
-    width: 1200px;
-    height: 63px;
-    list-style: none;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-li {
-    float: left;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #111;
-}
-.section {
-    width: 1200px;
-    background-color: gray;
-}
-.flex {
-    display: flex;
-    justify-content: space-around;
-}
-.footer {
-    width: 1200px;
-    height: 100px;
-    background-color: gray;
-    color: white;
-    clear: both;
-    text-align: center;
-}
-.slider {
-    width: 100%;
-    max-width: 1200px;
-    height:350px;
-    text-align:center;
-    background-image: "img/abstract-business-code-270348.jpg";
-}
-img {
-    vertical-align: middle;
-}
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.no-boxshadow .page-header {
-    border-bottom: 1px solid rgb(204, 204, 204);
+  margin: 30px 0;
+  line-height: 2.5;
 }
 
-/*
-@media以外の所は全てのサイズで読み込まれます。
-*/
 
-p {
-    color: red;
+/* --------------------------------
+ * works
+ * -------------------------------- */
+.works {
+  padding: 80px 0;
+  background-color: #383634;
+}
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 60%;
+}
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+}
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.work-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+.work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-box.tree::after {
+  background-image: url('../img/tree.jpg');
+}
+.work-box.building::after {
+  background-image: url('../img/building.jpg');
+}
+.work-box.lake::after {
+  background-image: url('../img/lake.jpg');
+}
+.work-box.sky::after {
+  background-image: url('../img/sky.jpg');
+}
+.work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+}
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0;
 }
 
-@media screen and (min-width:480px) {
-    /*　画面サイズが480pxからはここを読み込む　*/
-    p {
-        color: #ededed;
-    }
+
+/* --------------------------------
+ * skills
+ * -------------------------------- */
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
+}
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
 }
 
-@media screen and (min-width:768px) and ( max-width:1024px) {
-    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
-    p {}
+
+/* --------------------------------
+ * contact
+ * -------------------------------- */
+.contact {
+  padding: 80px 0 150px;
 }
-
-@media screen and (min-width:1024px) {
-    /*　画面サイズが1024pxからはここを読み込む　*/
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
 }
-@media (max-width: 600px) {
-    h1 {
-        color: #0db;
-    }
-}
-/*
- * Topics section
- */
-
-.topics-section {
-    position: relative;
-    z-index: 20;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-}
-
-.topics-section>.inner {
-    margin: auto;
-    padding-top: 60px;
-    padding-bottom: 75px;
-    width: 960px;
-    background-color: grey;
-    width: 1200px;
-    display:flex;
-    justify-content: center;
-}
-
-.topics-section h2 {
-    display: none;
-}
-
-.topics-list li {
-    float: left;
-    margin-left: 24px;
-    width: 304px;
-}
-
-.topics-list li:first-child {
-    margin-left: 0;
-}
-
-.topics-list a {
-    display: block;
-}
-
-.topics-list .image-wrapper {
-    display: inline-block;
-    margin-bottom: 1.5em;
-    position: relative;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-}
-
-.no-boxshadow .topics-list .image-wrapper {
-    border: 1px solid rgb(204, 204, 204);
-    margin-left: -1px;
-    margin-right: -1px;
-}
-
-.about {
-    background-color: grey;
-}
-
-/* card */
-
-.topics-list .image-wrapper:before {
-    content: "";
-    position: absolute;
-    z-index: -10;
-    top: 75%;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.topics-list .title {
-    display: block;
-    font-size: 18px;
-    line-height: 1.34;
-    letter-spacing: 1px;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-
-.topics-list .date {
-    color: rgb(128, 128, 128);
-    display: block;
-    font-size: 12px;
-    line-height: 1.34;
-    margin-bottom: 1.34em;
-}
-
-.topics-list .description {
-    color: rgb(77, 77, 77);
-    font-size: 12px;
-    line-height: 1.75;
-}
-
-/*
- * Work section
- */
-
-.no-boxshadow .work-section .section-header {
-    border-top: 1px solid rgb(204, 204, 204);
-}
-
-.work-section .section-header>.inner {
-    margin: auto;
-    width: 960px;
-    position: relative;
-}
-
-/* タブ */
-
-.textshadow .work-section .section-body .read-more {
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.5) inset;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.5) inset;
-}
-
-/*
- * Contact section
- */
-
-.contact-section {
-    background-color: rgb(51, 51, 51);
-    color: rgb(255, 255, 255);
-}
-
-.contact-section>.inner {
-    height: 500px;
-    position: relative;
-    min-width: 960px;
-}
-
-.contact-section h2 {
-    font-size: 18px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.contact-form-wrapper {
-    width: 352px;
-    padding: 56px 64px 0;
-    position: absolute;
-    left: 50%;
-}
-
-/* Contact form */
-
-.contact-form .form-item {
-    margin-top: 0.5em;
-}
-
-.contact-form label {
-    display: block;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    line-height: 1.75;
-    text-transform: uppercase;
-}
-
-.contact-form input, .contact-form textarea {
-    border: 1px solid rgb(153, 153, 153);
-    font-size: 14px;
-    padding: 0.25em;
-}
-
-.contact-form input[type="text"], .contact-form input[type="email"] {
-    line-height: 1;
-    width: 200px;
-}
-
+.contact-form input[type=text],
 .contact-form textarea {
-    line-height: 1.25;
-    width: 340px;
-    height: 160px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
-.contact-form input[type="submit"] {
-    background-color: rgb(128, 128, 128);
-    border-width: 0;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    line-height: 1.5;
-    margin-top: 0.75em;
-    padding: 0.375em 0;
-    width: 120px;
-    text-align: center;
-    text-transform: uppercase;
+
+/* --------------------------------
+ * footer
+ * -------------------------------- */
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
 }
 
-/*
- * Footer
- */
 
-.page-footer>.inner {
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    width: 960px;
+/* --------------------------------
+ * smart phone
+ * -------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    background-image: none;
+  }
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .button:hover {
+    opacity: 1;
+  }
 
-/* Social links */
-
-/* Copyright */
-
-.copyright {
-    color: rgb(102, 102, 102);
-    font-size: 12px;
-    padding: 6px 0;
-    float: right;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.no-js .back-to-top {
-    display: none;
-}
-
-/* Style the navbar */
-
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-}
-
-/* Navbar links */
-
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-/* Page content */
-
-.content {
-    padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-
-.sticky+.content {
+  /* --- header --- */
+  .header {
     padding-top: 60px;
-}
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
 
-* {
-    box-sizing: border-box;
-}
+  /* --- about --- */
+  .about-text {
+    line-height: 1.8;
+  }
 
-/* Slideshow container */
-
-/* Hide the images by default */
-
-.mySlides {
+  /* --- works --- */
+  .works-wrapper,
+  .work-box {
+    display: block;
+  }
+  .work-image {
     display: none;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
+  }
+  .work-description {
+    position: relative;
+  }
+  .work-box::after {
     top: 0;
+    height: 100%;
+    background-size: cover;
+    transform: none;
+  }
+
+  /* --- skills --- */
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+  .skill-box {
+    margin: 40px auto;
+  }
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
+  .skill-text {
+    margin: 0;
+  }
+
+  /* --- contact --- */
+  .contact {
+    padding-bottom: 80px;
+  }
+  .contact-form {
+    width: 80%;
+  }
 }
 
-.center {
-    margin: 0 0 50px;
-}
 
-.center img {
-    width: 100%;
-    height: auto;
+/* --------------------------------
+ * challenge
+ *
+ * 31行目からの.heading::before, .heading::afterの
+ * スタイルをコメントアウトしてから適用してください。
+ * -------------------------------- */
+/*
+.heading::before,
+.heading::after {
+  content: '';
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  margin: 0 0.5em;
+  border: 1px solid;
+  vertical-align: 0.2em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
-
-.center .slick-next {
-    right: 20px;
-    z-index: 99;
+.work-box {
+  overflow: hidden;
 }
-
-.center .slick-prev {
-    left: 15px;
-    z-index: 100;
+.work-image {
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
-
-#slide{
-    position:relative;
-    overflow:hidden;
-    height:500px;
+.work-box:nth-child(odd) .work-image {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
 }
-#slide ul{
-    position:absolute;
-    width:3000px;
+.work-box:nth-child(even) .work-image {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
 }
-#slide li{
-    flort:left;
-    width:1000px;
-    list-style-type:none;
+.work-box:hover .work-image {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
+*/

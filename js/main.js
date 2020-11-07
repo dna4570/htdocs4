@@ -42,7 +42,6 @@ var $window = $(window),
 	$header = $('.page-header'),
 	headerOffsetTop = $header.offset().top;
 
-
 $window.on('scroll', function() {
     if ($window.scrollTop() > headerOffsetTop) {
     $header.addClass('sticky');
